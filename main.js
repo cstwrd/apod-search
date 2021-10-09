@@ -94,3 +94,7 @@ randomForm.addEventListener("submit", (e) => {
   const count = randomSearchInput.value;
   fetchRandom(count);
 });
+
+fetch(endpoint)
+  .then((blob) => blob.json())
+  .then((data) => displayResult(data));
