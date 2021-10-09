@@ -1,7 +1,7 @@
-#Nasa APOD Search
+# Nasa APOD Search
 
-##Search by Date
+## Search by Date
 
-##Search by Date Range
+## Search by Date Range
 
-##Get Random results
+## Get Random results
