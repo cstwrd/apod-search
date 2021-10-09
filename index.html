@@ -9,13 +9,13 @@
     <main>
       <div class="sidebar">
         <form class="date-form">
-          <h2>Search by date</h2>
+          <h3>Search by date</h3>
           <label for="search">Date</label>
           <input type="date" name="search" id="search" class="search-date" />
           <button type="submit">Search</button>
         </form>
         <form class="date-range-form">
-          <h2>Search by date range</h2>
+          <h3>Search by date range</h3>
           <label for="search-start">Start</label>
           <input type="date" name="search-start" class="search-start" />
           <label for="search-end">End</label>
@@ -23,7 +23,7 @@
           <button type="submit">Search</button>
         </form>
         <form class="random-form">
-          <h2>Get random generated images</h2>
+          <h3>Get random generated images</h3>
           <label for="search-random">Number of results (max 100)</label>
           <input
             type="number"
@@ -36,8 +36,10 @@
         </form>
       </div>
       <div class="results">
-        <h1 class="title"></h1>
-        <img class="main-img" src="" alt="" srcset="" />
+        <article class="result">
+          <h1 class="title"></h1>
+          <img class="main-img" src="" alt="" srcset="" />
+        </article>
       </div>
     </main>
 
