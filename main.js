@@ -2,7 +2,7 @@ const apiKey = "bVoAqAWLxIte9APQLlEvB6Rw7WFUdFKNsHCsWz6B";
 const endpoint = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 let apod = {};
 const mainImage = document.querySelector(".main-img");
-const mainElement = document.querySelector("main");
+const resultsContainer = document.querySelector(".results");
 const titleElement = document.querySelector(".title");
 
 const dateForm = document.querySelector(".date-form");
@@ -22,7 +22,7 @@ function displayResult(result) {
   <h1 class="title">${result.title}</h1>
   <img class="main-img" src="${result.url}" alt="${result.title}" />
   `;
-  mainElement.innerHTML = html;
+  resultsContainer.innerHTML = html;
 }
 
 function displayResults(searchResults) {
@@ -38,7 +38,7 @@ function displayResults(searchResults) {
     })
     .join("");
 
-  mainElement.innerHTML = html;
+  resultsContainer.innerHTML = html;
 }
 
 function fetchByDate(searchDate) {

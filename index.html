@@ -6,35 +6,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form class="date-form">
-      <p>Search by date</p>
-      <label for="search">Date</label>
-      <input type="date" name="search" id="search" class="search-date" />
-      <button type="submit">Search</button>
-    </form>
-    <form class="date-range-form">
-      <p>Search by date range</p>
-      <label for="search-start">Start</label>
-      <input type="date" name="search-start" class="search-start" />
-      <label for="search-end">End</label>
-      <input type="date" name="search-end" class="search-end" />
-      <button type="submit">Search</button>
-    </form>
-    <form class="random-form">
-      <p>Get random generated images</p>
-      <label for="search-random">Number of results (max 100)</label>
-      <input
-        type="number"
-        name="search-random"
-        class="search-random"
-        min="1"
-        max="100"
-      />
-      <button type="submit">Search</button>
-    </form>
     <main>
-      <h1 class="title"></h1>
-      <img class="main-img" src="" alt="" srcset="" />
+      <div class="sidebar">
+        <form class="date-form">
+          <h2>Search by date</h2>
+          <label for="search">Date</label>
+          <input type="date" name="search" id="search" class="search-date" />
+          <button type="submit">Search</button>
+        </form>
+        <form class="date-range-form">
+          <h2>Search by date range</h2>
+          <label for="search-start">Start</label>
+          <input type="date" name="search-start" class="search-start" />
+          <label for="search-end">End</label>
+          <input type="date" name="search-end" class="search-end" />
+          <button type="submit">Search</button>
+        </form>
+        <form class="random-form">
+          <h2>Get random generated images</h2>
+          <label for="search-random">Number of results (max 100)</label>
+          <input
+            type="number"
+            name="search-random"
+            class="search-random"
+            min="1"
+            max="100"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="results">
+        <h1 class="title"></h1>
+        <img class="main-img" src="" alt="" srcset="" />
+      </div>
     </main>
 
     <script src="main.js"></script>

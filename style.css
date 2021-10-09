@@ -6,6 +6,16 @@ html {
   font-weight: 200;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
 *,
 *:before,
 *:after {
@@ -13,11 +23,11 @@ html {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 input {
@@ -28,8 +38,19 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 2rem;
 }
 
 button {
   max-width: 200px;
+}
+
+.sidebar {
+  max-width: 20vw;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
