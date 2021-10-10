@@ -19,8 +19,11 @@ const searchResults = [];
 
 function displayResult(result) {
   const html = `
-  <h1 class="title">${result.title}</h1>
-  <img class="main-img" src="${result.url}" alt="${result.title}" />
+  <article class="result">
+      <a class="img-link" href="${result.url}">
+        <img class="main-img" src="${result.url}" alt="${result.title}" />
+      </a>
+    </article>
   `;
   resultsContainer.innerHTML = html;
 }
@@ -32,14 +35,19 @@ function displayResults(searchResults) {
   const html = filteredResults
     .map((result) => {
       return `
-    <h1 class="title">${result.title}</h1>
-    <img class="main-img" src="${result.url}" alt="${result.title}" />
+    <article class="result">
+      <a class="img-link" href="${result.url}">
+        <img class="main-img" src="${result.url}" alt="${result.title}" />
+      </a>
+    </article>
     `;
     })
     .join("");
 
   resultsContainer.innerHTML = html;
 }
+
+// function displayGrid
 
 function fetchByDate(searchDate) {
   const url = endpoint + `&date=${searchDate}`;
