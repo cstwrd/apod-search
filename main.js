@@ -19,11 +19,7 @@ const searchResults = [];
 
 function displayResult(result) {
   const html = `
-  <article class="result">
-      <a class="img-link" href="${result.url}">
-        <img class="main-img" src="${result.url}" alt="${result.title}" />
-      </a>
-    </article>
+  <img class="main-img" src="${result.url}" alt="${result.title}" />
   `;
   resultsContainer.innerHTML = html;
 }
@@ -36,9 +32,7 @@ function displayResults(searchResults) {
     .map((result) => {
       return `
     <article class="result">
-      <a class="img-link" href="${result.url}">
-        <img class="main-img" src="${result.url}" alt="${result.title}" />
-      </a>
+      <img class="main-img" src="${result.url}" alt="${result.title}" />
     </article>
     `;
     })
